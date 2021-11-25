@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Eventos</title>
+        <link rel="shortcut icon" href="..\Imagens/favicon.ico" type="image/x-icon">
+    <link href="../CSS/menu.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+        <div id="menuhorizontal">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="#" >EVENTOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li class="dropdown"><a href="#" class="dropbtn">CURSOS</a>
+                    <div class="dropdown-content">
+                        <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+                        <a href="engprodu.html">Engenharia de Produção</a>
+                    </div>
+                </li>
+                <li><a href="entrar.html">ENTRAR</a></li>
+                <li id='about'><a href="sobre.html">SOBRE</a></li>
+
+            </ul>
+            <img src="../Imagens/Logo.jpg" alt="Logo do Instituto Federal" />
+        </div>
+
+    </header>
+
+    <main>
+
+    <h1>Inscreva-se</h1>
+    
+    <form method="POST" action="inscricao" name="formInscricao">
+    
+      <fieldset>
+      
+        <label for="evento">Evento</label>
+        <select name="assunto" id="evento" required >
+          <option value=""> -- Selecione --</option>                        
+          <option value="voe">Voe sem asas</option>
+          <option value="jun">Festa junina</option>
+          <option value="inf">Semana de tecnologia</option>
+        </select>
+      
+      </fieldset>
+      
+      <fieldset>
+        <legend>Informações de Acesso</legend>
+          <p>
+            <label for="inscrever-usuario">Usuário</label>
+            <input type="text" name="usuario" id="inscrever-usuario" required />
+          </p>
+          
+          <p>
+            <label for="inscrever-senha">Senha</label>
+            <input type="password" name="senha" id="inscrever-senha" required />
+          </p>
+          
+          <p>
+            <label for="confirmar-senha">Confirme a Senha</label>
+            <input type="password" name="confirmar-senha" id="confirmar-senha" required />
+          </p>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <p>
+          <label for="inscrever-nome">Nome Completo</label>
+          <input type="text" name="nome" id="inscrever-nome" required />
+        </p>
+        <p>
+          <label for="inscrever-email">E-mail</label>
+          <input type="email" name="email" id="inscrever-email" required />
+        </p>
+        <p>
+          <label for="inscrever-celular">Celular</label>
+          <input type="tel" name="celular" id="inscrever-celular"/> <span>(99) 99999-9999</span>
+        </p>
+      
+        <fieldset>
+          <legend>Sexo</legend>
+          <label for="inscrever-sexo-masc">Masculino
+            <input id="inscrever-sexo-masc" type="radio" name="sexo" value="M" />
+          </label>
+          
+          <label for="inscrever-sexo-fem">Feminino
+            <input id="inscrever-sexo-fem" type="radio" name="sexo" value="F" />
+          </label>
+        </fieldset>
+        
+        <p>
+          <label for="inscrever-nascimento">Data de Nascimento</label>
+          <input type="date" name="nascimento" id="inscrever-nascimento" />
+        </p>
+        <p>
+          <label for="inscrever-cor">Cor Favorita</label>
+          <input type="color" name="cor" id="inscrever-cor" />
+        </p>
+        <p>
+          <label for="inscrever-github">Perfil no Github</label>
+          <input type="url" name="github" id="inscrever-github" />
+        </p>
+      </fieldset>
+      
+      <p>
+        <button id="btnForm" type="submit">Inscrever</button>
+        <button type="reset" id="btnForm">Limpar</button>
+      </p>
+      
+    </form>
+    </main>
+  
+    <footer>
+        <br><br>
+        <div id="my_menu" align="left">
+            <a href="https://www.facebook.com/ifsppirituba"><img src="..\Imagens/facebook.png" width="41" height="43" title="IFSP Facebook" alt="IFSP Facebook"></a>
+        </div>
+        <p>
+            IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+        </p>
+    </footer>
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
